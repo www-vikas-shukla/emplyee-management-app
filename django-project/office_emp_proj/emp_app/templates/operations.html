@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<title>EMP - OPERATIONS</title>
+</head>
+<body>
+<section class="operations">
+    <div class="emp-app">
+        <header class="header">
+            <h1 class="header-logo">EMP APP - OPERATIONS</h1>
+        </header>
+        <main class="main">
+            <nav class="nav">
+                <ul class="tabs">
+                    <li class="tab">
+                        <a href="http://127.0.0.1:8000/" class="nav-link">Home</a>
+                    </li>
+                    <li class="tab" >
+                       <a href="" class="nav-link">Operations</a>
+                    </li>
+                    <li class="tab">
+                        <a href="http://127.0.0.1:8000/admin/" class="nav-link">Admin Panel</a>
+                    </li>
+                </ul>
+            </nav>
+            <section class="dashboard">  
+                <div class="card pink">  
+                   <a href="/all_emp"> <i class="fa-solid fa-eye"></i> <br>
+                    <span>VIEW EMPLOYEE</span></a>
+                </div>  
+                <div class="card green">  
+                    <a href="/add_emp"><i class="fa-solid fa-user-plus"></i> <br>
+                         <span> ADD EMPLOYEE</span></a> 
+                </div>  
+                <div class="card orange">  
+                   <a href="/remove_emp"><i class="fa-solid fa-trash"></i> <br>
+                   <span> REMOVE EMPLOYEE</span></a>
+                </div>  
+                <div class="card brown">  
+                  <a href="/filter_emp"><i class="fa-solid fa-filter"></i> <br>
+                     <span>FILTER EMPLOYEE</span></a> 
+                </div>  
+            </section>
+        </main>
+    </div>
+</section>
+
+<style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Space+Mono:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+	box-sizing: border-box;
+	font-family: "Inter", sans-serif;
+
+}
+
+.operations{
+    height: 100vh;
+    background: linear-gradient(cyan,pink);
+}
+
+input, select, button, textarea {
+	font: inherit;
+	color: inherit;
+	outline: 0;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+.emp-app {
+	box-shadow: 0 0 2px 0 rgba(#000, .1), 0 15px 30px rgba(#444, .1);
+	padding: 3rem;
+	border-radius: 15px;
+	max-width: 1400px;
+	margin-left: auto;
+	margin-right: auto;
+	min-height: calc(100vh - 4rem);
+}
+
+.header-logo {
+	font-family: "Lora", sans-serif;
+	font-weight: 900;
+	font-size: 3rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(Blue,white);
+    border-radius: 3px;
+
+}
+
+
+.main {
+	margin-top: 6rem;
+	display: grid;
+	grid-template-columns: 1fr 4fr;
+	column-gap: 5rem;
+}
+
+.tabs {
+	display: flex;
+	flex-direction: column;
+    gap: 1rem;
+}
+
+.tab {
+	display: flex;
+	&+.tab {
+		margin-top: .5rem;
+	}
+}
+
+.nav-link{
+font-family: "Lora", sans-serif;
+text-decoration: none;
+font-size: 1.5rem;
+font-weight: 600;
+padding: 5px 10px;
+background: linear-gradient(orange,white);
+border: none;
+border-radius: 3px;
+}
+
+.main-content {
+	background-color: #EEE;
+}
+
+.content-header {
+	display: flex;
+}
+
+.content-header-inner {
+	flex: 1;
+}
+
+.content-header-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	font-family: "Lora", sans-serif;
+	line-height: 1.125;
+	small {
+		display: block;
+		font-weight: 400;
+		font-family: "Space Mono", monospace;
+		font-size: .875em;
+		color: var(--c-action-secondary);
+		margin-top: .5em;
+	}
+}
+
+.content-header-info {
+	margin-top: 1.5rem;
+	font-weight: 600;
+}
+
+.link {
+	color: orangered;
+	text-decoration:none;
+
+	&:hover, &:focus {
+		box-shadow: 0 3px 0 currentcolor;
+        color: blue;
+
+	}
+}
+
+.content-header-illustration {
+	display: flex;
+	justify-content: flex-end;
+	flex: 1;
+	margin-top: -2rem;
+	img {
+		max-width: 400px;
+		max-height: 300px;
+	}
+}
+
+</style> 
+
+<style>
+.dashboard {  
+font-family: Arial, sans-serif;  
+display: flex;  
+justify-content: center;  
+align-items: center;  
+margin: 0;  
+background: transparent; 
+gap: 3rem;
+}  
+
+.card {  
+display: flex;  
+flex-direction: column;  
+justify-content: center;  
+align-items: center;  
+height: 205px;
+width: 205px;
+border-radius: 50%;  
+color: white;  
+text-align: center;  
+font-size: 18px;  
+transition: transform 0.2s;  
+}  
+
+.card:hover {  
+transform: scale(1.15);  
+} 
+
+i{
+    font-size: 30px; 
+}
+
+span{
+    background: linear-gradient(red,black);
+    font-weight: 900;
+}
+
+.card a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.pink {  
+background-color: #e91e63;  
+background-image: url(https://img.freepik.com/free-photo/brunette-businesswoman-posing_23-2148142128.jpg?t=st=1727277980~exp=1727281580~hmac=245ab155291afc93c0900e82ac0d64d1e9a7e65dd736243780825a096cfc327e&w=740);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}  
+
+.green {  
+background-color: #4caf50; 
+background-image: url(https://img.freepik.com/free-photo/business-woman-posing-suit-office_23-2148352520.jpg?t=st=1727278470~exp=1727282070~hmac=90c2ee5acdd7fe16b92f4f545391a6b301fa4a4c083f874b252d1ff6ac2772c7&w=740); 
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}  
+
+.orange {  
+background-color: #ff9800;  
+background-image: url(https://img.freepik.com/free-photo/smiling-young-businesswoman-holding-digital-tablet-hand-looking-away_23-2147943713.jpg?t=st=1727278568~exp=1727282168~hmac=f57ae10d00672f962ca633f0bd595d4b5e5cc305e9c3bbf639e86d4b2ed360bd&w=740);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+
+}  
+
+.brown {  
+background-color: #795548;  
+background-image: url(https://img.freepik.com/premium-photo/business-people_53419-5375.jpg?w=740);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}  
+
+</style>
+
+    <script src="https://kit.fontawesome.com/98f99d095a.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>  
+</body>
+</html>
