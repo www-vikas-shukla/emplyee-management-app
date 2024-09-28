@@ -7,50 +7,62 @@
 <title>Office Employee Management System!</title>
 </head>
 <body>
-<section class="homepage">
-        <div class="emp-app">
-            <header class="header">
-                <h1 class="header-logo">Office Employee Management System</h1>
-            </header>
-            <main class="main">
-                <nav class="nav">
-                    <ul class="tabs">
-                        <li class="tab">
-                            <a href="http://127.0.0.1:8000/" class="nav-link">Home</a>
-                        </li>
-                        <li class="tab" >
-                           <a href="http://127.0.0.1:8000/operations_emp" class="nav-link">Operations</a>
-                        </li>
-                        <li class="tab">
-                            <a href="http://127.0.0.1:8000/admin/" class="nav-link">Admin Panel</a>
-                        </li>
-                    </ul>
-                </nav>
-                <div class="content">
-                    <div class="content-header">
-                        <div class="content-header-inner">
-                            <h1 class="content-header-title">Hello Folks Hope You doing Well ! <br />Welcome  EMP App  <i class="fa-solid fa-address-card"></i></h1>
-                            <div class="content-header-info">
-                               Know All About <a href="#" class="link"> Employees <i class="fa-solid fa-users"></i> </a>
-                            </div>
-                        </div>
-                        <div class="content-header-illustration">
-                            <img src="https://img.freepik.com/free-photo/brunette-businesswoman-posing_23-2148142400.jpg?t=st=1727277837~exp=1727281437~hmac=65d7de837574e387fe71fef55961fa5ef64b39089e026577a5399848ffb09967&w=740"/>
-                        </div>
-                    </div>
-                </div>
-            </main>
-        </div>
-    </section>
 
+		<section class="homepage">
+			<header class="header">
+				<h1 class="header-logo"><i class="fa-solid fa-users-gear"></i> Office Employee Management System</h1>
+			</header>
+				<div class="emp-app">
+					<main class="row">
+						<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 col-xl-3 col-xxl-3">
+							<nav class="nav">
+								<ul class="tabs">
+									<li class="tab">
+										<a href="http://127.0.0.1:8000/" class="nav-link">Home</a>
+									</li>
+									<li class="tab" >
+									   <a href="/operations_emp" class="nav-link">Operations</a>
+									</li>
+									<li class="tab">
+										<a href="http://127.0.0.1:8000/admin/" class="nav-link">Admin Panel</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+		
+						<div class="col-lg-5 col-md-5 col-sm-5  col-xs-5 col-xl-5 col-xxl-5">
+							<div class="content">
+								<div class="content-header">
+									<div class="content-header-inner">
+										<h1 class="content-header-title">Hlo hope you are fine !
+											 <br>Welcome to EMS App  <i class="fa-solid fa-address-card"></i></h1>
+											 <h5>
+											Know  About <a href="#" class="link"> Employees <i class="fa-solid fa-users"></i> </a>
+										</h5>
+										
+									</div>
+								</div>
+							</div>
+						</div>
+		
+						<div class="col-lg-4 col-md-4 col-sm-4  col-xs-4 col-xl-4 col-xxl-4">
+							<div class="content-header-illustration">
+								<img src="https://img.freepik.com/free-photo/brunette-businesswoman-posing_23-2148142400.jpg?t=st=1727277837~exp=1727281437~hmac=45d7de837574e387fe71fef55941fa5ef44b39089e024577a5399848ffb09947&w=740"/>
+							</div>
+						</div>
+					</main>
+				</div>
+			</section>
+	
 <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Space+Mono:wght@400;700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;400;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,400;0,700;1,400;1,500;1,400&family=Space+Mono:wght@400;700&display=swap');
 
 *{
     margin: 0;
     padding: 0;
 	font-family: "Inter", sans-serif;
+	
 }
 
 i{
@@ -60,47 +72,39 @@ i{
 .homepage{
     height: 100vh;
     background: linear-gradient(cyan,pink);
-}
-
-input, select, button, textarea {
-	font: inherit;
-	color: inherit;
-	outline: 0;
+	width: 100%;
 }
 
 img {
 	display: block;
-	max-width: 100%;
+	width: 100%;
+	border-radius: 35%;
+}
+
+img:hover{
+transform: scale(1.10); 
+transition: 1.8s; 
+
 }
 
 .emp-app {
 	box-shadow: 0 0 2px 0 rgba(#000, .1), 0 15px 30px rgba(#444, .1);
 	padding: 3rem;
-	border-radius: 15px;
-	max-width: 1400px;
-	margin-left: auto;
-	margin-right: auto;
-	min-height: calc(100vh - 4rem);
+	width: 100%;
 }
 
-.header-logo {
-	font-family: "Lora", sans-serif;
-	font-weight: 900;
-	font-size: 3rem;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    background: linear-gradient(Blue,white);
-    border-radius: 3px;
-
+.header{
+	color: white;
+    background: linear-gradient(red,black);
+	width: 100%;
+	display: flex;
+	justify-content: center;
 }
 
+.header-logo{
+	font-weight: 600;
+	font-size: 2.8rem;
 
-.main {
-	margin-top: 6rem;
-	display: grid;
-	grid-template-columns: 1fr 4fr;
-	column-gap: 5rem;
 }
 
 .tabs {
@@ -119,12 +123,18 @@ img {
 .nav-link{
 font-family: "Lora", sans-serif;
 text-decoration: none;
-font-size: 1.5rem;
-font-weight: 600;
-padding: 5px 10px;
+font-size: 1rem;
+padding: 5px 8px;
 background: linear-gradient(orange,white);
 border: none;
 border-radius: 3px;
+}
+
+.nav-link:hover{
+	transform: scale(1.10); 
+    transition: 1s; 
+	background: linear-gradient(orangered,whitesmoke);
+	color:black;
 }
 
 .main-content {
@@ -141,22 +151,17 @@ border-radius: 3px;
 
 .content-header-title {
 	font-size: 2.5rem;
-	font-weight: 700;
+	font-weight: 600;
 	font-family: "Lora", sans-serif;
 	line-height: 1.125;
 	small {
 		display: block;
 		font-weight: 400;
 		font-family: "Space Mono", monospace;
-		font-size: .875em;
+		font-size: .875rem;
 		color: var(--c-action-secondary);
-		margin-top: .5em;
+		margin-top: .5rem;
 	}
-}
-
-.content-header-info {
-	margin-top: 1.5rem;
-	font-weight: 600;
 }
 
 .link {
@@ -166,18 +171,17 @@ border-radius: 3px;
 	&:hover, &:focus {
 		box-shadow: 0 3px 0 currentcolor;
         color: blue;
-
 	}
 }
 
 .content-header-illustration {
 	display: flex;
-	justify-content: flex-end;
+	justify-content: center;
 	flex: 1;
-	margin-top: -2rem;
+	margin-top: -1rem;
 	img {
 		max-width: 400px;
-		max-height: 300px;
+		max-height: 400px;
 	}
 }
 
