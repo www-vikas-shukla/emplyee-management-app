@@ -7,17 +7,15 @@
 <title>EMS - OPERATIONS</title>
 </head>
 <body>
+    
     <header class="header">
-        <h1 class="header-logo"><i class="fa-solid fa-users-rays"></i> EMS APP - OPERATIONS</h1>
+        <h1 class="header-logo"><i class="fa-solid fa-users-rays"></i> EMS - OPERATIONS</h1>
     </header>
 
     <nav class="navbar">
         <ul class="tabs">
             <li class="tab">
                 <a href="http://127.0.0.1:8000/" class="nav-link">Homepage</a>
-            </li>
-            <li class="tab" >
-               <a href="/operations_emp" class="nav-link">Operations</a>
             </li>
             <li class="tab">
                 <a href="http://127.0.0.1:8000/admin/" class="nav-link">Admin Panel</a>
@@ -28,32 +26,32 @@
 <section class="operations">
 <div class="container">
     <div class="emp-app">   
-        <main class="row">
-            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 col-xl-3 col-xxl-3">
+        <div class="row">
+            <div class="col-lg-3">
             <div class="card pink">  
                        <a href="/all_emp"> <i class="fa-solid fa-eye"></i> <br>
                         <span>VIEW EMPLOYEE</span></a>
                     </div>  
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 col-xl-3 col-xxl-3">
+            <div class="col-lg-3">
              <div class="card green">  
                         <a href="/add_emp"><i class="fa-solid fa-user-plus"></i> <br>
                              <span> ADD EMPLOYEE</span></a> 
                     </div>  
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 col-xl-3 col-xxl-3">
+            <div class="col-lg-3">
              <div class="card orange">  
                        <a href="/remove_emp"><i class="fa-solid fa-trash"></i> <br>
                        <span> REMOVE EMPLOYEE</span></a>
                     </div>  
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 col-xl-3 col-xxl-3">
+            <div class="col-lg-3">
              <div class="card brown">  
                       <a href="/filter_emp"><i class="fa-solid fa-filter"></i> <br>
                          <span>FILTER EMPLOYEE</span></a> 
                     </div> 
             </div>   
-        </main>
+        </div>
     </div>
 </div>
 </section>
@@ -129,10 +127,6 @@ border-radius: 3px;
     transition: 1s; 
 	background: linear-gradient(orangered,whitesmoke);
 	color:black;
-}
-
-.main-content {
-	background-color: #EEE;
 }
 
 .card {  
